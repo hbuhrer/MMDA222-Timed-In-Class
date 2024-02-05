@@ -1,0 +1,94 @@
+.header {
+  text-align: center;
+  padding-top: 20rem;
+  background-size: cover;
+  background-image: url(asteroid.jpg);
+  color: #fff;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.header h1 {
+  font-size: 4rem;
+  border: 5px solid #00000000;
+  background: #00000077;
+  padding-bottom: 0.5rem;
+}
+.content {
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.content h2 {
+  font-size: 1.5em;
+}
+.content .section-with-table {
+  display: flex;
+  justify-content: space-between;
+}
+.content .section-with-table p,
+.content .section-with-table .box {
+  flex-basis: 80%;
+}
+.content .section-with-table table {
+  flex-basis: 80%;
+  text-align: center;
+  border: 5px double #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.box {
+  flex-basis: 80%;
+  border: 5px double #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  background-color: rgb(158, 167, 187);
+  border-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.content p {
+  padding-right: 3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #a5a5a5;
+  color: #fff;
+  font-size: 1em;
+  margin-top: auto;
+  z-index: 1;
+  border: solid 1px black;
+}
+
+@media only screen and (max-width: 980px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .content {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .header {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .section-with-table {
+    flex-direction: column;
+  }
+
+  body {
+    text-align: center;
+  }
+
+  .content p {
+    padding: 0;
+  }
+}
